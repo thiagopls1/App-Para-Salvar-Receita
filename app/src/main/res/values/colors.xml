@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Default Colors  -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <!--                  -->
+
+    <!--  White/Black Colors  -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_gray">#DADADA</color>
+    <color name="bright_gray">#7E7E7E</color>
+    <color name="dark_gray">#505050</color>
+    <color name="black">#FF000000</color>
+    <!--                      -->
+
+    <!--  Pink Colors  -->
+    <color name="white_pink">#FBE4FC</color>
+    <color name="light_pink">#FDA3DE</color>
+    <color name="bright_pink">#FD7BD9</color>
+    <color name="dark_pink">#CC3294</color>
+    <!--               -->
+    <!--  Blue Colors  -->
+    <color name="light_blue">#A1D8DF</color>
+    <color name="bright_blue">#28D2E8</color>
+    <color name="dark_blue">#008FA1</color>
+    <!--               -->
+</resources>

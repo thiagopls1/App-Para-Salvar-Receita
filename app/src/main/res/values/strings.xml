@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">RecipesNotebook</string>
+    <string name="app_title">Caderno de receitas</string>
+    <string name="cake_logo">cake_logo</string>
+
+    <string name="opened_recipe_title">Receita</string>
+
+    <string name="main_activity_title">Menu Principal</string>
+
+    <string name="list_recipes_button">Ver Receitas</string>
+    <string name="add_recipes_button">Adicionar Receitas</string>
+    <string name="edit_recipes_button">Editar Receitas</string>
+    <string name="remove_recipes_button">Excluir Receitas</string>
+
+    <string name="your_recipes">Suas Receitas</string>
+    <string name="delete_recipes">Excluir Receitas</string>
+    <string name="add_recipe">Adicionar Receita</string>
+    <string name="edit_recipes">Editar Receitas</string>
+
+    <string name="et_recipe_title">Nome da receita</string>
+    <string name="et_recipe_ingredients">Ingredientes</string>
+    <string name="et_recipe_cook_method">Modo de preparo</string>
+
+    <string name="placeholder_recipe_title">Receita</string>
+    <string name="placeholder_recipe_ingredients">Ingredientes</string>
+
+    <string name="edit_recipe">Editar Receita</string>
+
+</resources>

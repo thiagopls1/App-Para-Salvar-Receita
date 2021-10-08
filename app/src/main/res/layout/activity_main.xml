@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/v_header"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/container_header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="@string/app_title"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/v_header"
+        app:layout_constraintEnd_toEndOf="@id/v_header"
+        app:layout_constraintStart_toStartOf="@+id/v_header"
+        app:layout_constraintTop_toTopOf="@id/v_header"
+        tools:ignore="TextContrastCheck"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/cake_logo"
+        android:src="@drawable/ic_baseline_cake_white_24dp"
+        app:layout_constraintBottom_toBottomOf="@id/v_header"
+        app:layout_constraintEnd_toStartOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="@id/v_header"
+        app:layout_constraintTop_toTopOf="@id/v_header"
+        tools:ignore="TextContrastCheck,ImageContrastCheck"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_activity_title"
+        android:textColor="@color/dark_pink"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/container_body"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/v_header"
+        />
+
+    <LinearLayout
+        android:id="@+id/container_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/v_header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <Button
+            android:id="@+id/btn_list_recipes"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingTop="35dp"
+            android:drawableTop="@drawable/ic_baseline_event_note_100"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="3dp"
+            android:backgroundTint="@color/light_blue"
+            android:text="@string/list_recipes_button"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle"
+            tools:ignore="TextContrastCheck"
+            />
+
+        <Button
+            android:id="@+id/btn_add_recipes"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingTop="35dp"
+            android:drawableTop="@drawable/ic_baseline_add_box_100"
+            android:backgroundTint="@color/light_blue"
+            android:text="@string/add_recipes_button"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle"
+            tools:ignore="TextContrastCheck"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-8dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/container_body"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <Button
+            android:id="@+id/btn_edit_recipes"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingTop="35dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="3dp"
+            android:drawableTop="@drawable/ic_baseline_edit_100"
+            android:backgroundTint="@color/light_blue"
+            android:text="@string/edit_recipes_button"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle"
+            tools:ignore="TextContrastCheck"
+            />
+
+        <Button
+            android:id="@+id/btn_delete_recipes"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:paddingTop="35dp"
+            android:drawableTop="@drawable/ic_baseline_delete_outline_100"
+            android:backgroundTint="@color/light_blue"
+            android:text="@string/remove_recipes_button"
+            android:textColor="@color/white"
+            style="?android:attr/buttonBarButtonStyle"
+            tools:ignore="TextContrastCheck"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

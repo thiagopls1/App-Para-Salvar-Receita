@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white_pink"
+    tools:context=".DeleteRecipeActivity">
+
+    <View
+        android:id="@+id/content_header"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/container_header"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:text="@string/delete_recipes"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintEnd_toEndOf="@id/content_header"
+        app:layout_constraintStart_toStartOf="@id/content_header"
+        app:layout_constraintTop_toTopOf="@id/content_header"
+        tools:ignore="TextContrastCheck"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recipes_listview"
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/recipes_listview"
+        tools:listitem="@layout/list_recipes_item"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_back"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/round_button"
+        android:drawableStart="@drawable/ic_baseline_arrow_back_50"
+        android:paddingStart="11dp"
+        android:paddingEnd="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recipes_listview"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
