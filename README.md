@@ -1,16 +1,16 @@
-# Save-Recipe-App
+# App-Para-Salvar-Receita
 
-## About
+## Sobre
 
-In this project I used Room to do the Database and Koltin for Coding.
+Fiz esse app com o objetivo de aprender e praticar o manuseio de banco de dados em uma aplicação mobile. 
 
-## Features
+## Recursos
 
-- Add recipes
-- Edit recipes
-- Delete recipes
-- See all of them in a specific screen for it
+- Adicionar Receitas
+- Editar Receitas
+- Excluir Receitas
+- Ver todas as receitas em uma lista e lê-las com mais detalhes ao clicar
 
-## Main Screen
+## Tela Inicial
 
 <img src="https://cdn.discordapp.com/attachments/493163081644376064/896164398241030184/unknown.png" />
