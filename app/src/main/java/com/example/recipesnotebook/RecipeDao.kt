@@ -37,8 +37,5 @@ interface RecipeDao {
 
     @Query("DELETE FROM recipe WHERE recipeId IN (:recipeId) ")
     fun deleteRecipe(recipeId: Long)
-
-    @Query("DELETE FROM recipe ")
-    fun deleteAllRecipes()
 }
 
